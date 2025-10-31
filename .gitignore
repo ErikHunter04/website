@@ -1,5 +1,9 @@
-.venv
-.streamlit
+# environment
+/.venv
+
+# python cache
 __pycache__
+
+# local data
 /data
 /outputs/backups

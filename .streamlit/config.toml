@@ -1,0 +1,17 @@
+[theme] 
+font = "sans serif"
+base = "dark"
+primaryColor = "#66a3ff"        # soft blue glow
+backgroundColor = "#0d1b2a"     # deep navy base
+secondaryBackgroundColor = "#162942"
+textColor = "#f2f5f9"           # near-white text
+
+[server]
+headless = true
+port = 8501
+
+[browser]
+gatherUsageStats = false      
+
+[client]
+# showErrorDetails = "none"
