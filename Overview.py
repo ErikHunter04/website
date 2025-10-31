@@ -1,10 +1,13 @@
 import streamlit as st
+from PIL import Image
 
-# ---------- Page sections ----------
+# ---------- App shell ----------
+st.set_page_config(page_title="Applied Capital - Overview", layout="wide")
+st.logo("assets/logo_white.svg")
+st.title("Strategy Overview")
 
-def render_overview():
-    st.subheader("Thesis")
-    st.write(
+st.subheader("Thesis")
+st.write(
         """
         Our approach is a long-only investment strategy – focused on North American equities – based
         on the hypothesis that stock returns within each country’s sector can be modeled as stochastic 
@@ -14,3 +17,9 @@ def render_overview():
         allocate capital across sectors and individual stocks, adapting to evolving market regimes.
         """
     )
+
+st.subheader("Methodology")
+Meth = Image.open("assets/Methodology.png")
+st.image(Meth, caption="Overview of our Strategy", use_container_width=False)
+
+    
